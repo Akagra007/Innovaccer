@@ -1,0 +1,28 @@
+body{
+	background-image: url("https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&w=1000&q=80");
+	width: 100%;
+	 background-repeat: no-repeat, repeat;
+	 background-size: cover;
+	 opacity: 0.8;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  margin: 10px;
+}
+
+.centerdiv{
+	display: inline-block;
+}
+
+.logincss{
+	background-color: white;
+	opacity: 0.9;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}

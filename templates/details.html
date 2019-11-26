@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details Page</title>
+</head>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.center{
+	text-align: center;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<body>
+	<div class="center" ><a href="/"><button class="ui black button">Log Out</button></a></div>
+
+<table>
+  <tr>
+    <th>Visitor</th>
+    <th>CheckIn</th>
+    <th>CheckOut</th>
+    <th>Host</th>
+  </tr>
+  	{%for m in meets%}
+  <tr>
+    <td>m.vid</td>
+    <td>m.checkin</td>
+    <td>m.checkout</td>
+    <td>m.hid</td>
+  </tr>
+  {%endfor%}
+</table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+img{
+	border-radius: 50px;
+	height: 250px;
+	width: auto;
+	margin: auto;
+	padding: 10px;
+}
+
+h1{
+	text-align: center;
+	color: black;
+}
+.center {
+  margin: auto;
+  width: 65%;
+  padding: 10px;
+   text-align: center;
+}
+
+.img-container-block {
+  text-align: center;
+}
+
+.butcenter{
+	text-align: center;
+}
+
+.homepagehieght{
+	height: 650px;
+}
+
+.col1{
+	margin-top:5.5%;
+}
+
+.font{
+	font-size: 35px;
+
+}
+
+body{
+	background-image: url('https://giphy.com/gifs/BHNfhgU63qrks/fullscreen');
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+

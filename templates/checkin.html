@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Host Registration</title>
+</head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/checkin.css' %}">
+<body>
+
+
+<div class="card-container center">
+<div class="ui card centerdiv">
+  <!-- <div class="image">
+    <img src="https://bit.ly/2qt42bG">
+  </div> -->
+  <div class="content">
+    <a class="header">Welcome</a>
+    <div class="meta">
+      <span class="date">Please enter your details</span>
+    </div>
+    <br>
+    <!-- <div class="description">
+      Kristy is an art director living in New York.
+    </div> -->
+
+    <form action="../../visitors/checkin/" method="POST">
+      <div>
+        {%csrf_token%}
+      <label class="label">Name</label>
+      <input type="text" name="name" required>
+      <br>
+      <label class="label">Email</label>
+      <input type="Email" name="email" required>
+      <br>
+      <label class="label">Phone</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"  placeholder="enter 10 digit number"
+       required>
+      <!-- <input type="text" name="phone" required> -->
+      <br>
+      <label class="label">Check In</label>
+      <input id="date" name="checkin" required>
+      <br>
+      <label class="label">Host Email</label>
+      <input type="Email" name="h-email" required>
+    </div>
+    <div>
+      <button type="Submit"class="ui black button">Go for meeting</button>
+    </div>
+  </div>
+    </form>
+
+    <div>
+    {% for mes in messages %}
+    {{mes}}
+    {% endfor %}
+    </div>
+</div>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+  document.getElementById('date').value = Date();
+</script>
+</html>

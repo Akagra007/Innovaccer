@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		login page
+	</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/checkin.css' %}">
+<body>
+<div>
+	<form method="post" class="center logincss">
+		<h3>Enter Login Details</h3>
+		{% csrf_token %}
+		username: <input type="text" name="username" required>
+		<br>
+		password: <input type="password" name="password" required>
+		<br>
+		<input type="Submit">
+	</form>
+</div>
+
+<div>
+    {% for mes in messages %}
+    {{mes}}
+    {% endfor %}
+    </div>
+</body>
+</html>

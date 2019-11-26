@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+
+<body >
+
+  <video autoplay muted loop id="myVideo">
+  <!-- <source src="https://i.imgur.com/pqdICWJ.mp4" type="video/mp4"> -->
+    <source src="https://i.imgur.com/pqdICWJ.mp4" type="video/mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+  <div class="center">
+  <h1 class="ui header">
+    WELCOME TO INNOVACER
+  <div class="sub header">
+    Please select your domain are you a Employ or Guest
+  </div>
+   </h1>
+  </div>
+  <div class="ui segment homepagehieght">
+  <div class="ui two column very relaxed grid">
+
+    <div class="column col1">
+      <div class="img-container-block"><img src="https://bit.ly/2OLGyGT"></div>
+      <div class="ui grid">
+        <div class="eight wide column butcenter">
+         <a href="admin/"><button class="ui black button">SignUp</button></a> 
+        </div>
+        <div class="eight wide column butcenter">
+         <a href="account/authenticate/login/"><button class="ui black button">Login</button></a> 
+        </div>
+      </div>
+        <div class="center font"> <br><p>HOST</p></div>
+       
+    </div>
+
+    <div class="column centerloginbox col1">
+      <div  class="img-container-block"><img src="https://bit.ly/2OLGyGT"></div>
+      <div class="ui grid">
+        <div class="eight wide column butcenter">
+         <a href="visitors/checkin"><button class="ui black button">Check In</button></a> 
+        </div>
+        <div class="eight wide column butcenter">
+         <a href="visitors/checkout"><button class="ui black button">Check Out</button></a> 
+        </div>
+      </div>
+      <div class="center font"> <br><p>GUEST</p></div>
+    </div>
+
+  </div>
+  <div class="ui vertical divider">
+  
+  </div>
+
+
+</div>
+</body>
+</html>

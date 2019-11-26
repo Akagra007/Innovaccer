@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Host Registration</title>
+</head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/checkin.css' %}">
+<body>
+
+
+<div class="card-container center">
+<div class="ui card centerdiv">
+  <!-- <div class="image">
+    <img src="https://bit.ly/2qt42bG">
+  </div> -->
+  <div class="content"email= models.ForeignKey(User, on_delete=models.CASCADE)>
+    <a class="header">Check Out</a>
+    <div class="meta">
+      <span class="date">Enter check out time</span>
+    </div>
+    <br>
+    <!-- <div class="description">
+      Kristy is an art director living in New York.
+    </div> -->
+
+    <form action="../../visitors/checkout/" method='POST'>
+      <div>
+      {%csrf_token%}
+      <label class="label">Email</label>
+      <input type="email" name="email" required>
+
+      <label class="label">Check Out</label>
+      <input id="date" name="checkout" required>
+    </div>
+    <div>
+      <button type="Submit" class="ui black button">Submit</button>
+    </div>
+    </form>
+  </div>
+</div>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+  document.getElementById('date').value = Date();
+</script>
+</html>
