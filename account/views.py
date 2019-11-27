@@ -45,8 +45,8 @@ def register(request):
 
 def login(request):
 	if request.user.is_authenticated:
-		h=request.user.host
-		meets=meeting.objects.filter(hid=h.id)
+		h=request.user
+		meets=meeting.objects.filter(hid=h)
 		context={'meets':meets}
 
 		return render(request, 'details.html', context)
