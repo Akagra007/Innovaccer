@@ -22,7 +22,8 @@ Now your phone numbers are ready to accept messages from this software.
 As you Downloaded the zip folder.First extract the files to a folder and name it "office". Open the terminal and go to the location where you can find manage.py file. Now give command python3 manage.py runserver. Now your Localhost:8000 is activated run this server on your web browsers. Here you can see the main screen.
 
 ###### Four main Functionalities
-Register your host. Click on the register button and it will redirect you to the admin login page.(Username: akagra and Password: office) now you will enter the admin section and here you can see the databases. Now go to Users 
+Register your host. Click on the register button and it will redirect you to the admin login page.(Username: akagra and Password: office) now you will enter the admin section and here you can see the databases. Now go to Users and open it.
+![usermodel](/images/User Model.jpeg)
 
 
 
