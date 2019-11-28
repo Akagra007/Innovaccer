@@ -37,6 +37,12 @@ __Checkin Button__ use to check in, fill up the form. When form is submitted SMS
 __CheckOut Button__ use to checkout, fill up the form. When form is submitted a mail in recieved by the respected visitor.<br />
 __Login Button__ admin login page to check his history of meeting.
 
+## Screens of project
+<img src = "https://github.com/Akagra007/Innovaccer/blob/master/images/Main%20Page.png" align = "center" width="700px"><br />
+<img src = "https://github.com/Akagra007/Innovaccer/blob/master/images/CheckIn.png" align = "center" width="700px"><br />
+<img src = "https://github.com/Akagra007/Innovaccer/blob/master/images/CheckOut.png" align = "center" width="700px"><br />
+<img src = "https://github.com/Akagra007/Innovaccer/blob/master/images/Login.png" align = "center" width="700px"><br />
+
 
 
 
